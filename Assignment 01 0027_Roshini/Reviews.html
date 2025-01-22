@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" type="image/x-icon" href="newpaw.png">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Customer Reviews</title>
+<style>
+     
+     body{
+        background-color: gray;
+        background-size: cover;
+        background-size: 100% 90%;
+    }
+     .navibar{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            background-color: #000000;
+            overflow: hidden;
+            position:relative;
+        }
+        .navibar ul{
+            padding-left: 820px;
+        }
+        .navibar li{
+            float: left;
+        }
+        .navibar li a{
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+
+        }
+        .navibar li a:hover {
+            background-color: #430303;
+        }
+
+   
+    .content {
+        padding: 20px;
+    }
+ 
+    header {
+            padding: 0;
+            display: flex;
+            align-items: center;
+            font-family: verdana;
+            letter-spacing: 10px;
+            bottom: -0.5px;
+            justify-content: space-between;
+            width: 100%;
+            background-color: #000000;
+            position: relative;
+    }
+
+    
+    .header-left img,
+    .header-right img {
+            height: 40px;
+        }
+
+        .header-center {
+            flex: 1;
+            text-align: center;
+        }
+
+        .header-center h1 {
+            margin: 0;
+        }
+
+        .header-left,
+        .header-right {
+            top: 50%;
+            transform: translateY(-50%);
+            position: absolute;
+        }
+
+        .header-left {
+            left: 20px;
+        }
+
+        .header-right {
+            right: 20px;
+        }
+
+       footer {
+        position: relative;
+        bottom: 0;
+        padding: 10px; 
+        background-color: #000000;
+        color: white;
+        text-align: center; 
+        margin: 2px;
+        top: 50px; 
+        width: 100%;
+        
+    }
+
+     table {
+        table-layout: fixed;
+        background-color: #0f0e0e;
+        width: 100%; 
+        table-layout: fixed; 
+        border-collapse: collapse; 
+     }
+ 
+     td {
+        margin-left: -200px;
+        border: none; 
+        margin: 0%; 
+        text-align: center;  
+        color: white;
+        width:200px;
+        white-space: nowrap; 
+        overflow: hidden;  
+        text-overflow: ellipsis;
+        border: 1px solid black;
+        padding: 5px; 
+     }
+
+     
+     tr {
+       background-color: #000000;  
+     }
+     th{
+        width: 200px;
+        height: 10px;
+     }
+     .narrow {
+            width: -50px; 
+        }
+ 
+    a{
+        text-decoration: dotted;
+        color: #fff;
+    }
+    .map-container iframe {
+            height: 100%;
+            width: 100%;
+            border: 0;  
+        }
+
+    .map-container {
+            height: 200px;  
+            width: 300px;    
+            overflow: hidden; 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border: 2px solid #dedada;  
+            border-radius: 0px;  
+            margin: auto;  
+        }
+
+        main {
+            padding: 20px;
+        }
+        
+            .reviews {
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .reviews h1 {
+            text-align: left;
+            margin-bottom: 20px;
+            color: #fbf312;
+           
+        }
+
+        .review-cards {
+            display: flex;
+            gap: 20px;
+            justify-content: space-between;
+        }
+
+        .review-card {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 30%;
+            text-align: left;
+        }
+
+        .review-card h2 {
+            margin-top: 0;
+            color: #333;
+            text-align: center;
+        }
+
+        .review-card p {
+            color: #666;
+            line-height: 1.5;
+            font-family:lucida handwriting;
+        }
+
+        .reviewer {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .reviewer img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        .reviewer p {
+            margin: 0;
+            color: #333;
+            text-align: center;
+            
+        }
+
+        .sprite {
+    background-image: url(logos.png);
+    background-repeat: no-repeat;
+    display: block;
+    margin-top: 30px;
+    margin-left: 120px;
+}
+
+.sprite-1 {
+    width: 50px;
+    height: 50px;
+    background-position: -10px -10px;
+}
+
+.sprite-2 {
+    width: 50px;
+    height: 50px;
+    background-position: -10px -80px;
+}
+
+.sprite-3 {
+    width: 50px;
+    height: 50px;
+    background-position: -10px -150px;
+}
+    </style>
+</head>
+<body>
+   
+ 
+<header>
+    <div class="header-left">
+        <img src="newpaw.png" alt="Left Image">
+    </div>
+    <div class="header-center">
+        <h1 style="color: #ffffff;">PET CARE</h1>
+    </div>
+    <div class="header-right">
+        <img src="newpaw.png" alt="Right Image">
+    </div>
+</header>
+
+
+<div class="navibar">
+    <ul class="navibar ul">
+        <li><a href="Homee.html">HOME</a></li>
+        <li><a href="Services.html">SERVICES</a></li>
+        <li><a href="About.html">ABOUT</a></li>
+        <li><a href="Reviews.html">REVIEWS</a></li>
+    </ul>
+    </div>
+
+    <main>
+        <section class="reviews">
+            <h1 style=" text-decoration: underline solid white 13%;letter-spacing: 2px;"><big>C</big><small>USTOMERS</small></h1>
+            <div class="review-cards">
+                <div class="review-card">
+                    <h2>Quick Service</h2>
+                    <p style="text-align: center;">The products I ordered<br> reached before time. The<br> support I received was<br> thorough and timely and<br>
+                        the support team was<br> quick to respond with a<br> single interaction.<br> Awesome! . Would<br> definitely
+                        recommend<br> this to every pet owner for<br> best service, be it<br> technical support or<br> timely delivery.
+                        </p>
+                    <div class="reviewer">
+                        <img src="girl.jpg" alt="Stephanie Fernando">
+                        <p style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;"><b>Stephanie Fernando, Kelaniya</b></p>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <h2>Comfortable Shopping</h2>
+                    <p style="text-align: center;">Was a little nervous to<br> order because I had<br> never considered<br> shopping online for my<br> Husky. Glad
+                    I took the<br> chance, now I am a<br> happy returning<br> customer. You just made<br> pet shopping very easy.<br>
+                    Thankyou Pet Care! </p>
+                    <div class="reviewer">
+                        <img src="pupm1.jpeg" alt="Peter Almeda">
+                        <p style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;"><b>Peter Almeda, Kadawatha</b></p>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <h2>Best Discounts</h2>
+                    <p style="text-align: center;">I can't even express how<br> excited I was when your<br> delivery arrived. The<br> quality of product is 100%<br> as advertised,
+                         that too, in<br> such a good price. I<br> bought my dog some toys<br> and a snack bowl and he<br> just loved it. 
+                         Just wanted<br> to thank you guys for<br> such an amazing service!</p>
+                    <div class="reviewer">
+                        <img src="pupm2.jpeg" alt="Ravinda Perera">
+                        <p style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;"><b>Ravinda Perera, Country</b></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+ 
+<footer>
+    <table cellspacing="10">
+        <tr><th><img style="height: 150px;width: 150px; border-radius: 100%; border:solid red 2px;" src="petcare.jpg" alt="Logo"></th><th><h2>Have A Question</h2></th><th></th><th style="text-align: left;"><h2>Information</h2></th><th><h2>Visite Us</h2></th></tr>
+        <tr>
+          <td  style="width: 150px;"><br><p> <strong>P</strong>ets are humanising.They remind<br> 
+            us we have an obligation and <br>responsibility to preserve and<br>
+             nature and care for all life...</p></td>
+          <td style="width: 150px;"><ul style="list-style: none; line-height: 50px;">
+            <li><a href="services.html">services</a></li>
+            <li><a href="Dog hostal.html">Dog Hostal</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="Contact.html">Contact Us</a></li>
+        </ul></td>
+        <td>
+            <i class="sprite sprite-1" title="Address"></i>
+            <i class="sprite sprite-2" title="Telephone"></i>
+            <i class="sprite sprite-3" title="Email"></i>
+        </td>
+          <td style="width: 260px; text-align: left;">  <p> pet care (pvt)ltd,123,1st floor <br>Dalugamuwa,Kelaniya
+        </p>
+        <br><p>Telephone-0112 999999 <br>Fax-0094 112 621382</p>
+        <br><p>info@petcare.com</p></td>
+        <td style="width: 260px;text-align: center;"> <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15883.099949662083!2d79.9840912!3d6.9637778!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae25bc4c8e45c05%3A0x88aa6deff4d13b10!2sKelaniya%2C%20Sri%20Lanka!5e0!3m2!1sen!2sus!4v1644842695458!5m2!1sen!2sus" allowfullscreen="" loading="lazy"></iframe>
+        </div></td></tr>
+       
+    </table>
+    
+
+     
+    <p style="background-color: #999593;margin-bottom: auto;">&copy;2024 Pet Care 11600 Designed By Anupama </p>
+</footer>
+
+
+</body>
+</html>

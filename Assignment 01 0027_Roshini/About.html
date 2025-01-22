@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" type="image/x-icon" href="newpaw.png">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Us</title>
+<style>
+     
+     body{
+        background-size: cover;
+
+    }
+     .navibar{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            background-color: #000000;
+            overflow: hidden;
+            position:relative;
+        }
+        .navibar ul{
+            padding-left: 820px;
+        }
+        .navibar li{
+            float: left;
+        }
+        .navibar li a{
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+
+        }
+        .navibar li a:hover {
+            background-color: #430303;
+        }
+
+   
+    
+    header {
+            padding: 0;
+            display: flex;
+            align-items: center;
+            font-family: verdana;
+            letter-spacing: 10px;
+            bottom: -0.5px;
+            justify-content: space-between;
+            width: 100%;
+            background-color: #000000;
+            position: relative;
+    }
+
+    
+    .header-left img,
+    .header-right img {
+            height: 40px;
+        }
+
+        .header-center {
+            flex: 1;
+            text-align: center;
+        }
+
+        .header-center h1 {
+            margin: 0;
+        }
+
+        .header-left,
+        .header-right {
+            top: 50%;
+            transform: translateY(-50%);
+            position: absolute;
+        }
+
+        .header-left {
+            left: 20px;
+        }
+
+        .header-right {
+            right: 20px;
+        }
+
+       footer {
+        position: relative;
+        bottom: 0;
+        padding: 10px; 
+        background-color: #000000;
+        color: white;
+        text-align: center; 
+        margin: 2px;
+        top: 50px; 
+        width: 100%;
+        
+    }
+
+    .content {
+       flex: 1; 
+     }
+    
+     table {
+        table-layout: fixed;
+        background-color: #0f0e0e;
+        width: 100%; 
+        table-layout: fixed; 
+        border-collapse: collapse; 
+     }
+ 
+     td {
+        margin-left: -200px;
+        border: none; 
+        margin: 0%; 
+        text-align: center;  
+        color: white;
+        width:200px;
+        white-space: nowrap; 
+        overflow: hidden;  
+        text-overflow: ellipsis;
+        border: 1px solid black;
+        padding: 5px; 
+     }
+
+     
+     tr {
+       background-color: #000000;  
+     }
+     th{
+        width: 200px;
+        height: 10px;
+     }
+     .narrow {
+            width: -50px; 
+        }
+ 
+    a{
+        text-decoration: dotted;
+        color: #fff;
+    }
+    .map-container iframe {
+            height: 100%;
+            width: 100%;
+            border: 0;  
+        }
+
+    .map-container {
+            height: 200px;  
+            width: 300px;    
+            overflow: hidden; 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border: 2px solid #dedada;  
+            border-radius: 0px;  
+            margin: auto;  
+        }
+
+    main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    margin-bottom: -50px;
+}
+
+section.about {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 0px;
+    overflow: hidden;
+}
+
+section.about img {
+    width: 400px;
+    height: 500px ;
+}
+
+section.about .about-text {
+    padding: 40px;
+    
+}
+
+section.about .about-text h2 {
+    margin-top: 0;
+    text-align: center;
+}
+
+
+.line {
+    width: 2px;
+    height: 30px;
+    background-color: #000;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.button-wrapper {
+    position: relative;
+}
+button {
+    height: 35px;
+    width: 150px;
+    padding: 10px 30px;
+    background-color: #fff;
+    border: 2px solid #000;
+    cursor: pointer;
+    font-size: 14px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+button:hover {
+    border-color:  green;
+    cursor: help; 
+}
+.sprit {
+    background-image: url(sprit.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+.sprit:hover{
+    filter: saturate(0%);
+}
+
+.sprit-A {
+    width: 75px;
+    height: 75px;
+    background-position: -6px -6px;
+}
+
+.sprit-B {
+    width: 75px;
+    height: 75px;
+    background-position: -93px -6px;
+}
+
+.sprit-C {
+    width: 75px;
+    height: 75px;
+    background-position: -180px -6px;
+}
+
+.sprit-D {
+    width: 75px;
+    height: 75px;
+    background-position: -267px -6px;
+}
+
+.sprite {
+    background-image: url(logos.png);
+    background-repeat: no-repeat;
+    display: block;
+    margin-top: 30px;
+    margin-left: 120px;
+}
+
+.sprite-1 {
+    width: 50px;
+    height: 50px;
+    background-position: -10px -10px;
+}
+
+.sprite-2 {
+    width: 50px;
+    height: 50px;
+    background-position: -10px -80px;
+}
+
+.sprite-3 {
+    width: 50px;
+    height: 50px;
+    background-position: -10px -150px;
+}
+
+</style>
+</head>
+<body>
+   
+ 
+        <header>
+            <div class="header-left">
+                <img src="newpaw.png" alt="Left Image">
+            </div>
+            <div class="header-center">
+                <h1 style="color: #ffffff;">PET CARE</h1>
+            </div>
+            <div class="header-right">
+                <img src="newpaw.png" alt="Right Image">
+            </div>
+        </header>
+
+        <div class="navibar">
+            <ul class="navibar ul">
+                <li><a href="Homee.html">HOME</a></li>
+                <li><a href="Services.html">SERVICES</a></li>
+                <li><a href="About.html">ABOUT</a></li>
+                <li><a href="Reviews.html">REVIEWS</a></li>
+            </ul>
+            </div>
+
+    <main>
+        <section class="about">
+            <img src="mv.jpeg" alt="Cute dog">
+            <div class="about-text">
+                <h2 style="text-decoration: underline solid black 13%; letter-spacing: 2px;"><big>A</big><small>BOUT</small> <big>U</big><small>S</small></h2><br>
+                <p style="text-align: center;">Welcome to Pet Care. Shop on our website to avail<br>
+                exciting offers exclusively for your pet friends. Earn<br>
+                points and get Coupons for additional discounts. We<br>
+                deal in Dog Toys, Tasty Snacks, Collars, Leashes,<br>
+                Harnesses with their designs that you and your pet will<br>
+                fall in love with. Want to stay fit? No problem – <br>
+                the page also features useful links to social media<br>
+                pages, mail us, or visit our online shop.</p><br>
+
+                <div class="button-container">
+                     <div class="button-wrapper">
+                         <button id="workButton">WORK</button>
+                    </div>
+                <div class="line"></div>
+                <div class="button-wrapper">
+                        <button id="serviceButton">SERVICE</button>
+                </div>
+                <div class="line"></div>
+                <div class="button-wrapper">
+                        <button id="contactButton">CONTACT</button>
+            </div>
+        </div>
+        <a class="sprit sprit-A" title="Facebook" href="https://www.facebook.com/"></a>
+        <a class="sprit sprit-B" title="Instagram" href="https://www.instagram.com/"></a>
+        <a class="sprit sprit-C" title="Youtube" href="https://www.youtube.com/"></a>
+        <a class="sprit sprit-D" title="Whatsapp" href="https://www.whatsapp.com/"></a>
+
+        </div>
+        </section>
+    </main>
+
+ 
+<footer>
+    <table cellspacing="10">
+        <tr><th><img style="height: 150px;width: 150px; border-radius: 100%; border:solid red 2px;" src="petcare.jpg" alt="Logo"></th><th><h2>Have A Question</h2></th><th></th><th style="text-align: left;"><h2>Information</h2></th><th><h2>Visite Us</h2></th></tr>
+        <tr>
+          <td  style="width: 150px;"><br><p> <strong>P</strong>ets are humanising.They remind<br> 
+            us we have an obligation and <br>responsibility to preserve and<br>
+             nature and care for all life...</p></td>
+          <td style="width: 150px;"><ul style="list-style: none; line-height: 50px;">
+            <li><a href="services.html">services</a></li>
+            <li><a href="Dog hostal.html">Dog Hostal</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="Contact.html">Contact Us</a></li>
+        </ul></td>
+        <td>
+            <i class="sprite sprite-1" title="Address"></i>
+            <i class="sprite sprite-2" title="Telephone"></i>
+            <i class="sprite sprite-3" title="Email"></i>
+        </td>
+          <td style="width: 260px; text-align: left;">  <p> pet care (pvt)ltd,123,1st floor <br>Dalugamuwa,Kelaniya
+        </p>
+        <br><p>Telephone-0112 999999 <br>Fax-0094 112 621382</p>
+        <br><p>info@petcare.com</p></td>
+        <td style="width: 260px;text-align: center;"> <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15883.099949662083!2d79.9840912!3d6.9637778!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae25bc4c8e45c05%3A0x88aa6deff4d13b10!2sKelaniya%2C%20Sri%20Lanka!5e0!3m2!1sen!2sus!4v1644842695458!5m2!1sen!2sus" allowfullscreen="" loading="lazy"></iframe>
+        </div></td></tr>
+       
+    </table>
+
+     
+    <p style="background-color: #999593;margin-bottom: auto;">&copy;2024 Pet Care 11600 Designed By Anupama </p>
+</footer>
+
+<script>
+    document.getElementById('workButton').addEventListener('click', function() {
+    window.location.href = 'Homee.html';
+});
+
+document.getElementById('serviceButton').addEventListener('click', function() {
+    window.location.href = 'services.html';
+});
+
+document.getElementById('contactButton').addEventListener('click', function() {
+    window.location.href = 'Contact.html';
+});
+
+  </script>
+
+</body>
+</html>
+

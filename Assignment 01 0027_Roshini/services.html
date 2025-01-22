@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" type="image/x-icon" href="newpaw.png">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Services</title>
+<style>
+     
+     body{
+        background-size: cover;
+        background-size: 100% 90%;
+    }
+     .navibar{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            background-color: #000000;
+            overflow: hidden;
+            position:relative;
+        }
+        .navibar ul{
+            padding-left: 820px;
+        }
+        .navibar li{
+            float: left;
+        }
+        .navibar li a{
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+
+        }
+        .navibar li a:hover {
+            background-color: #430303;
+        }
+
+   
+    .content {
+        padding: 20px;
+    }
+ 
+    header {
+            padding: 0;
+            display: flex;
+            align-items: center;
+            font-family: verdana;
+            letter-spacing: 10px;
+            bottom: -0.5px;
+            justify-content: space-between;
+            width: 100%;
+            background-color: #000000;
+            position: relative;
+    }
+
+    
+    .header-left img,
+    .header-right img {
+            height: 40px;
+        }
+
+        .header-center {
+            flex: 1;
+            text-align: center;
+        }
+
+        .header-center h1 {
+            margin: 0;
+        }
+
+        .header-left,
+        .header-right {
+            top: 50%;
+            transform: translateY(-50%);
+            position: absolute;
+        }
+
+        .header-left {
+            left: 20px;
+        }
+
+        .header-right {
+            right: 20px;
+        }
+
+       footer {
+        position: relative;
+        bottom: 0;
+        padding: 10px; 
+        background-color: #000000;
+        color: white;
+        text-align: center; 
+        margin: 2px;
+        top: 50px; 
+        width: 100%;
+        
+    }
+
+     table {
+        table-layout: fixed;
+        background-color: #0f0e0e;
+        width: 100%; 
+        table-layout: fixed; 
+        border-collapse: collapse; 
+     }
+ 
+     td {
+        margin-left: -200px;
+        border: none; 
+        margin: 0%; 
+        text-align: center;  
+        color: white;
+        width:600px;
+        white-space: nowrap; 
+        overflow: hidden;  
+        text-overflow: ellipsis;
+        padding: 10px; 
+     }
+
+     
+     tr {
+       background-color: #000000;  
+     }
+     th{
+        width: 200px;
+        height: 10px;
+     }
+     .narrow {
+            width: -50px; 
+        }
+ 
+    a{
+        text-decoration: dotted;
+        color: #fff;
+    }
+    .map-container iframe {
+            height: 100%;
+            width: 100%;
+            border: 0;  
+        }
+
+    .map-container {
+            height: 200px;  
+            width: 300px;    
+            overflow: hidden; 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border: 2px solid #dedada;  
+            border-radius: 0px;  
+            margin: auto;  
+        }
+
+        .styled-button {
+            padding: 4px 50px; 
+            top: -20px;  
+            text-align: center;  
+            text-decoration: none;
+            color: rgb(0, 0, 0);    
+            display: inline-block; 
+            font-size: 16px;  
+            cursor: pointer;  
+            position:relative;
+            background-color: #f8e111; 
+            border-radius: 20px;
+            right: -450px;
+            border: none;
+    }
+    .sprite {
+    background-image: url(logos.png);
+    background-repeat: no-repeat;
+    display: block;
+    margin-top: 30px;
+    margin-left: 120px;
+}
+
+.sprite-1 {
+    width: 50px;
+    height: 50px;
+    background-position: -10px -10px;
+}
+
+.sprite-2 {
+    width: 50px;
+    height: 50px;
+    background-position: -10px -80px;
+}
+
+.sprite-3 {
+    width: 50px;
+    height: 50px;
+    background-position: -10px -150px;
+}
+
+    
+</style>
+</head>
+<body>
+   
+ 
+<header>
+    <div class="header-left">
+        <img src="newpaw.png" alt="Left Image">
+    </div>
+    <div class="header-center">
+        <h1 style="color: #ffffff;">PET CARE</h1>
+    </div>
+    <div class="header-right">
+        <img src="newpaw.png" alt="Right Image">
+    </div>
+</header>
+
+<div class="navibar">
+    <ul class="navibar ul">
+        <li><a href="Homee.html">HOME</a></li>
+        <li><a href="Services.html">SERVICES</a></li>
+        <li><a href="About.html">ABOUT</a></li>
+        <li><a href="Reviews.html">REVIEWS</a></li>
+    </ul>
+    </div>
+
+
+<table >
+    <tr style="background-color: #fffcfc;">
+            <td style="text-align: left;"><img style="height: 150px;width: 150px;border: 5px solid orange; padding: 5px;" src="helth.png" alt=""><br><h2 style="color: #000000;">Healthy and Tasty Treats</h2>
+                <p style="color: #000000;">With Dog Snack Brands like Superbite, Gnawlers, Jerhigh your dog can have nutritive<br> binge
+                    moments. You can choose among Dog Snack Bacon or Hotdog Bar Chicken when<br> you seek
+                    snacks of animal origin. Among products of vegetable and animal origin, you can<br> choose among
+                    Dog Snack Spinach, Dog Snack Carrot, Fruity Stick and so on and enjoy up<br> to 30% discounts on
+                    the same.</p>
+         <button class="styled-button" id="alert-button1">More</button>
+            </td>
+            <td style="text-align: left;"><img style="height: 150px;width: 150px;border: 5px solid orange; padding: 5px;" src="paw.png" alt=""><br><h2 style="color: #000000;">Dog Toys</h2>
+                <p style="color: #000000;">While you buy dog toys online with us, we take care that the toy has rounded edges ideal for<br>
+                    small breeds and pups. They all are made from animal safe, food grade and virgin plastic. So,<br>
+                    have some fun with your Dog and give him a Happier Playtime. Buy Chew Bones, Rubber Balls,<br>
+                    Rope Toys and many more items at huge discounts.</p>
+        <button class="styled-button" id="alert-button2">More</button>
+            </td>
+    </tr>
+    <tr style="background-color: #fffcfc;">
+        <td style="text-align: left;"><img style="height: 150px;width: 150px;border: 5px solid orange; padding: 5px;" src="doog.jpeg" alt=""><br><h2 style="color: #000000;">Collars & Leashes</h2>
+            <p style="color: #000000;">Get exciting offers on Dog Collar Charms, Leashes, Muzzles, Harnesses, etc. on Top Brands +<br>
+                Warranty! and make your Dog's training happy. For your bulldog or Rottweiler we have metal<br>
+                chains with grips, collars with pointed studs and extra-large choke chains. For your beagle or<br>
+                Pomeranian we have printed collars and nylon ropes. With attractive prints and designer motifs<br>
+                there is a lot when you search for the best.</p>
+        <button class="styled-button" id="alert-button3">More</button>
+        </td>
+        <td style="text-align: left;"><img style="height: 150px;width: 150px;border: 5px solid orange; padding: 5px;" src="cross.png" alt=""><br><h2 style="color: #000000;">Supplements & Shampoos</h2>
+            <p style="color: #000000;">Keep your pup in shape with healthy dog Supplements. Dog Supplements come in many forms<br>
+                including soft chews and tablets. Give your furry friends the vitamins they need to stay Happy<br>
+                and Healthy. We also have a variety of pet shampoos for different breeds and small pups<br>
+                including tick shampoos on upto 40% discount under Best Brands. Go, check Out Now!</p>
+        <button class="styled-button" id="alert-button4">More</button>
+        </td>
+    </tr>
+</table>
+<footer>
+    <table cellspacing="10">
+        <tr><th><img style="height: 150px;width: 150px; border-radius: 100%; border:solid red 2px;" src="petcare.jpg" alt="Logo"></th><th><h2>Have A Question</h2></th><th></th><th style="text-align: left;"><h2>Information</h2></th><th><h2>Visite Us</h2></th></tr>
+        <tr>
+          <td  style="width: 150px;"><br><p> <strong>P</strong>ets are humanising.They remind<br> 
+            us we have an obligation and <br>responsibility to preserve and<br>
+             nature and care for all life...</p></td>
+          <td style="width: 150px;"><ul style="list-style: none; line-height: 50px;">
+            <li><a href="services.html">services</a></li>
+            <li><a href="Dog hostal.html">Dog Hostal</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="Contact.html">Contact Us</a></li>
+        </ul></td>
+        <td>
+            <i class="sprite sprite-1" title="Address"></i>
+            <i class="sprite sprite-2" title="Telephone"></i>
+            <i class="sprite sprite-3" title="Email"></i>
+        </td>
+          <td style="width: 260px; text-align: left;">  <p> pet care (pvt)ltd,123,1st floor <br>Dalugamuwa,Kelaniya
+        </p>
+        <br><p>Telephone-0112 999999 <br>Fax-0094 112 621382</p>
+        <br><p>info@petcare.com</p></td>
+        <td style="width: 260px;text-align: center;"> <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15883.099949662083!2d79.9840912!3d6.9637778!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae25bc4c8e45c05%3A0x88aa6deff4d13b10!2sKelaniya%2C%20Sri%20Lanka!5e0!3m2!1sen!2sus!4v1644842695458!5m2!1sen!2sus" allowfullscreen="" loading="lazy"></iframe>
+        </div></td></tr>
+       
+    </table>
+    
+
+     
+    <p style="background-color: #999593;margin-bottom: auto;">&copy;2024 Pet Care 11600 Designed By Anupama </p>
+</footer>
+    
+<script>
+    document.getElementById("alert-button1").onclick = function() {
+        window.location.href = 'DogHostel.html';
+    };
+    document.getElementById("alert-button2").onclick = function() {
+        window.location.href = 'DogHostel.html';
+    };
+    document.getElementById("alert-button3").onclick = function() {
+        window.location.href = 'DogHostel.html';
+    };
+    document.getElementById("alert-button4").onclick = function() {
+        window.location.href = 'DogHostel.html';
+    };
+    
+  </script>
+</body>
+</html>
+

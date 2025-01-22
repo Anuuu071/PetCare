@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Care</title>
+    
+    <style>
+    body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #70c8b3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.contact {
+    width: 500px;
+    background-color: #00a1c6;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.contact h1 {
+    text-align: left;
+    margin-bottom: 20px;
+    color: #000000;
+    position: relative;
+    text-decoration: underline solid rgb(6, 6, 6) 13%;
+    letter-spacing: 2px;
+}
+
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact form input[type="text"],
+        .contact input[type="email"],
+        .contact input[type="tel"],
+        .contact textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        .contact input[type="text"]:focus,
+        .contact input[type="email"]:focus,
+        .contact input[type="tel"]:focus,
+        .contact textarea:focus {
+            border-color: #FFD700;  
+            background-color: #f7f7b8;  
+        }
+
+.contact textarea {
+    resize: none;
+    height: 150px;
+}
+
+.contact button {
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ffcc00;
+    color: #000;
+    font-size: 1em;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.contact button:hover {
+    background-color: #e6b800;
+}
+
+
+    </style>
+</head>
+<body>
+    <section class="contact">
+        <h1><big>C</big><small>ONTACT US</small></h1>
+        <form action="Homee.html">
+            <input type="text" name="name" placeholder="Name" required>
+            <input type="text" name="subject" placeholder="Subject" required>
+            <input type="tel" name="phone" placeholder="Phone" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <textarea name="message" placeholder="Message"></textarea>
+            <button type="submit"><b>SUBMIT NOW</b></button>
+        </form>
+    </section>
+    
+</body>
+</html>
